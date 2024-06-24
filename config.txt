@@ -4,6 +4,6 @@ https://www.movable-type.co.uk/scripts/latlong-vincenty.html
 
 https://gis.stackexchange.com/questions/349458/python-for-finding-the-gps-coordinates-of-a-point-x-distance-between-2-other-gps
 
-df = pd.DataFrame({"category":["Fruit", "Person","Fruit","Animal","Drink","Food","Animal","Drink","Person","Person","Person"], "value":[1,2,3,4,5,6,7,8,9,10,11]})
+df = pd.DataFrame({"category":["Fruit", "Person","Fruit","Animal","Drink","Food","Animal","Drink","Food","Person","Person","Person"], "value":[1,2,3,4,5,6,7,8,9,10,11,12]})
 x = df.groupby('category')['value'].apply(lambda s: s.sample(1, replace=False))
 _,indices = zip(*x.index)
